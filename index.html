@@ -4,11 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Done-for-you digital work for contemporary art galleries." />
+    <link rel="canonical" href="https://vitreen.studio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vitreen Studio" />
+    <meta property="og:title" content="Vitreen Studio — Digital work for galleries" />
+    <meta property="og:description" content="Done-for-you digital work for contemporary art galleries. Fixed-price tasks for websites, databases, sales material and visibility." />
+    <meta property="og:url" content="https://vitreen.studio/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <title>Vitreen — Digital work for galleries</title>
     <script type="module" src="/src/main.js"></script>
+    <!-- Structured data for search engines and LLM answer engines (GEO). Purely
+         additive — no visual or behavioural effect on the page. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Vitreen Studio",
+        "url": "https://vitreen.studio/",
+        "email": "hello@vitreen.studio",
+        "description": "Vitreen Studio does done-for-you digital work for contemporary art galleries: websites, collector databases, sales material and online visibility. Fixed price per task, no retainers, no hourly billing.",
+        "areaServed": "Worldwide",
+        "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+        "brand": { "@type": "Brand", "name": "Vitreen" },
+        "priceRange": "€80–€220",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Vitreen Studio tasks",
+          "itemListElement": [
+            { "@type": "Offer", "price": "120", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Publish an exhibition", "description": "Text, images and dates turned into a published exhibition page.", "category": "Website" } },
+            { "@type": "Offer", "price": "220", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Prepare for an opening", "description": "Homepage, exhibition and artist pages refreshed and ready before opening.", "category": "Website" } },
+            { "@type": "Offer", "price": "90", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Add an artist page", "description": "Biography, works, images and basic metadata added to the gallery website.", "category": "Website" } },
+            { "@type": "Offer", "price": "90", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Update 10 artworks", "description": "Update images, captions, availability or other artwork information.", "category": "Website" } },
+            { "@type": "Offer", "price": "90", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Fix a website issue", "description": "Investigate and fix one defined issue on the gallery website.", "category": "Website" } },
+            { "@type": "Offer", "price": "150", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Organise your database", "description": "Clean categories, fields and structure of the collector/artwork database.", "category": "Database" } },
+            { "@type": "Offer", "price": "220", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Import 50 artworks", "description": "Clean and import a spreadsheet or export into the gallery database.", "category": "Database" } },
+            { "@type": "Offer", "price": "180", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Clean 50 artwork records", "description": "Fix inconsistent artwork information across the database.", "category": "Database" } },
+            { "@type": "Offer", "price": "120", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Artlogic database check", "description": "Find what needs cleaning or reorganising in an Artlogic database.", "category": "Database" } },
+            { "@type": "Offer", "price": "80", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Collector PDF", "description": "A clean, gallery-ready PDF prepared from selected artworks.", "category": "Sales material" } },
+            { "@type": "Offer", "price": "120", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Private viewing room", "description": "Prepare and publish a private online artwork selection for a collector.", "category": "Sales material" } },
+            { "@type": "Offer", "price": "120", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Artist SEO check", "description": "Find the main SEO issues on an artist page.", "category": "Visibility" } },
+            { "@type": "Offer", "price": "90", "priceCurrency": "EUR", "itemOffered": { "@type": "Service", "name": "Google indexing", "description": "Get new gallery pages discovered and indexed by Google.", "category": "Visibility" } }
+          ]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I send the material for a task?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Reply to the confirmation email with your text, images, links or access details. We'll tell you if anything else is needed." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I request more than one task?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add the tasks you need and we'll confirm the scope and total before starting." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to change my current tools?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. We work with the tools you already use, including your existing website, Artlogic exports and shared files." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I'm not satisfied with the result?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We'll make it right. If we can't deliver the agreed outcome, we'll refund the task." }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -53,7 +122,60 @@
         <div class="task-filters" role="tablist" aria-label="Task categories">
           <button class="filter is-active" type="button" data-filter="all">All</button><button class="filter" type="button" data-filter="website">Website</button><button class="filter" type="button" data-filter="database">Database</button><button class="filter" type="button" data-filter="sales-material">Sales material</button><button class="filter" type="button" data-filter="visibility">Visibility</button>
         </div>
-        <div class="task-grid" id="task-grid" aria-live="polite"></div>
+        <div class="task-grid" id="task-grid" aria-live="polite"><!-- Static fallback: mirrors renderTasks() in src/main.js so crawlers and no-JS clients see the full task list. JS replaces this with the same markup on load. -->
+          <article class="task-card" data-preview-id="publish-exhibition" tabindex="0" role="button" aria-label="Preview Publish an exhibition">
+            <p class="task-category">Website</p><h3>Publish an exhibition</h3><p class="task-price">€120</p><p class="task-description">Text, images and dates turned into a published exhibition page.</p>
+            <button class="task-add" type="button" data-task-id="publish-exhibition" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="opening-website" tabindex="0" role="button" aria-label="Preview Prepare for an opening">
+            <p class="task-category">Website</p><h3>Prepare for an opening</h3><p class="task-price">€220</p><p class="task-description">Homepage, exhibition and artist pages refreshed and ready before opening.</p>
+            <button class="task-add" type="button" data-task-id="opening-website" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="artist-page" tabindex="0" role="button" aria-label="Preview Add an artist page">
+            <p class="task-category">Website</p><h3>Add an artist page</h3><p class="task-price">€90</p><p class="task-description">Biography, works, images and basic metadata added to the gallery website.</p>
+            <button class="task-add" type="button" data-task-id="artist-page" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="update-artworks" tabindex="0" role="button" aria-label="Preview Update 10 artworks">
+            <p class="task-category">Website</p><h3>Update 10 artworks</h3><p class="task-price">€90</p><p class="task-description">Update images, captions, availability or other artwork information.</p>
+            <button class="task-add" type="button" data-task-id="update-artworks" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="fix-website-issue" tabindex="0" role="button" aria-label="Preview Fix a website issue">
+            <p class="task-category">Website</p><h3>Fix a website issue</h3><p class="task-price">€90</p><p class="task-description">Something looks wrong or stopped working? We investigate and fix one defined issue.</p>
+            <button class="task-add" type="button" data-task-id="fix-website-issue" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="organise-database" tabindex="0" role="button" aria-label="Preview Organise your database">
+            <p class="task-category">Database</p><h3>Organise your database</h3><p class="task-price">€150</p><p class="task-description">Clean categories, fields and structure.</p>
+            <button class="task-add" type="button" data-task-id="organise-database" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="import-artworks" tabindex="0" role="button" aria-label="Preview Import 50 artworks">
+            <p class="task-category">Database</p><h3>Import 50 artworks</h3><p class="task-price">€220</p><p class="task-description">Clean and import your spreadsheet or export.</p>
+            <button class="task-add" type="button" data-task-id="import-artworks" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="clean-records" tabindex="0" role="button" aria-label="Preview Clean 50 artwork records">
+            <p class="task-category">Database</p><h3>Clean 50 artwork records</h3><p class="task-price">€180</p><p class="task-description">Fix inconsistent artwork information.</p>
+            <button class="task-add" type="button" data-task-id="clean-records" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="artlogic-check" tabindex="0" role="button" aria-label="Preview Artlogic database check">
+            <p class="task-category">Database</p><h3>Artlogic database check</h3><p class="task-price">€120</p><p class="task-description">Find what needs cleaning or reorganising.</p>
+            <button class="task-add" type="button" data-task-id="artlogic-check" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="collector-pdf" tabindex="0" role="button" aria-label="Preview Collector PDF">
+            <p class="task-category">Sales material</p><h3>Collector PDF</h3><p class="task-price">€80</p><p class="task-description">A clean, gallery-ready PDF prepared from selected artworks.</p>
+            <button class="task-add" type="button" data-task-id="collector-pdf" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="viewing-room" tabindex="0" role="button" aria-label="Preview Private viewing room">
+            <p class="task-category">Sales material</p><h3>Private viewing room</h3><p class="task-price">€120</p><p class="task-description">Prepare and publish a private online artwork selection for a collector.</p>
+            <button class="task-add" type="button" data-task-id="viewing-room" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="seo-check" tabindex="0" role="button" aria-label="Preview Artist SEO check">
+            <p class="task-category">Visibility</p><h3>Artist SEO check</h3><p class="task-price">€120</p><p class="task-description">Find the main issues.</p>
+            <button class="task-add" type="button" data-task-id="seo-check" aria-pressed="false">Add task</button>
+          </article>
+          <article class="task-card" data-preview-id="fix-google" tabindex="0" role="button" aria-label="Preview Google indexing">
+            <p class="task-category">Visibility</p><h3>Google indexing</h3><p class="task-price">€90</p><p class="task-description">Get new pages discovered.</p>
+            <button class="task-add" type="button" data-task-id="fix-google" aria-pressed="false">Add task</button>
+          </article>
+        </div>
       </section>
       <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
         <div class="section-heading"><p class="eyebrow">How it works</p><h2 id="how-title">Send the work.<br /><span>We handle it.</span></h2></div>

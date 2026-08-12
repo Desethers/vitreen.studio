@@ -1,0 +1,48 @@
+# Vitreen Studio
+
+> Done-for-you digital work for contemporary art galleries. Fixed price per task, no retainers, no hourly billing.
+
+Vitreen Studio is a digital studio (an extension of Vitreen) that handles the digital day-to-day work of contemporary art galleries: website updates, collector/artwork database work, sales material and online visibility. Galleries pick a task, see the fixed price upfront, and send what's needed by email — Vitreen confirms scope, does the work, and delivers for review before payment.
+
+Contact: hello@vitreen.studio
+Location: Paris, France
+Website: https://vitreen.studio/
+
+## How it works
+
+1. Choose a task and send what's needed (text, images, links, exports or access details) by email.
+2. Vitreen confirms scope, completes the task and human-checks every detail.
+3. Vitreen delivers the finished work by email for review. Payment happens after approval; if the agreed outcome isn't delivered, the task is refunded.
+
+No subscription, no retainer. Works with a gallery's existing tools (current website, Artlogic exports, shared files) — no new software to learn.
+
+## Services and pricing (fixed price per task, EUR)
+
+### Website
+- Publish an exhibition — €120 — text, images and dates turned into a published exhibition page.
+- Prepare for an opening — €220 — homepage, exhibition and artist pages refreshed and ready before opening.
+- Add an artist page — €90 — biography, works, images and basic metadata added to the gallery website.
+- Update 10 artworks — €90 — update images, captions, availability or other artwork information.
+- Fix a website issue — €90 — investigate and fix one defined issue.
+
+### Database
+- Organise your database — €150 — clean categories, fields and structure.
+- Import 50 artworks — €220 — clean and import a spreadsheet or export.
+- Clean 50 artwork records — €180 — fix inconsistent artwork information.
+- Artlogic database check — €120 — find what needs cleaning or reorganising.
+
+### Sales material
+- Collector PDF — €80 — a clean, gallery-ready PDF prepared from selected artworks.
+- Private viewing room — €120 — a private online artwork selection for a collector.
+
+### Visibility
+- Artist SEO check — €120 — find the main SEO issues on an artist page.
+- Google indexing — €90 — get new gallery pages discovered and indexed by Google.
+
+## Who it's for
+
+Contemporary art galleries that need digital/web/database work done without hiring in-house or briefing an agency for a retainer. Works alongside a gallery's existing website and tools rather than replacing them.
+
+## Larger projects
+
+For work beyond the fixed-price task list (e.g. a new website build, a full CRM migration), galleries can start a conversation via the "Larger project?" link on the site, which points to the Vitreen Software section.
