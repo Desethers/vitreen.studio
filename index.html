@@ -120,8 +120,8 @@
         </div>
       </section>
       <section class="footer-cta" aria-labelledby="footer-cta-title">
-        <h2 id="footer-cta-title">Spend less time updating.<br>More time with your gallery.</h2>
-        <p>Tell us what keeps getting in the way. We’ll show you a simpler way to handle it.</p>
+        <h2 id="footer-cta-title">What’s still on your gallery’s to-do list?</h2>
+        <p>Tell us what needs doing.<br>We’ll take it from there.</p>
         <a class="button" href="mailto:hello@vitreen.studio?subject=Vitreen%20demo">Book a call</a>
         <small>A focused 30-minute conversation about your gallery workflow.</small>
       </section>
@@ -131,7 +131,12 @@
       <nav class="site-footer__nav" aria-label="Footer"><div><span>Product</span><a href="#how-it-works">How it works</a><a href="#tasks">Pricing</a></div><div><span>Company</span><a href="#projects">About</a><a href="mailto:hello@vitreen.studio">Contact</a></div></nav>
       <div class="site-footer__bottom"><p>© 2026 Vitreen</p><div><span>EN</span><i aria-hidden="true">·</i><span>FR</span><p>Paris, France</p></div></div>
     </footer>
-    <aside class="request-summary" id="request-summary" hidden aria-live="polite"><div><strong id="task-count">0 tasks</strong><span id="task-total">€0 estimated</span></div><a class="button" id="request-tasks" href="mailto:hello@vitreen.studio">Request selected tasks</a></aside>
+    <aside class="request-summary" id="request-summary" hidden aria-live="polite" aria-label="Selected task estimate">
+      <div class="request-summary__header"><span class="request-summary__brand">Vitreen Studio</span><span class="request-summary__type">Estimate</span></div>
+      <div class="request-summary__items" id="request-items"></div>
+      <div class="request-summary__total"><div><strong id="task-count">0 tasks</strong><span id="task-total">€0 estimated</span></div><strong id="request-total">€0</strong></div>
+      <a class="button" id="request-tasks" href="mailto:hello@vitreen.studio">Request selected tasks <span aria-hidden="true">↗</span></a>
+    </aside>
     <dialog class="task-modal" id="task-modal" aria-labelledby="modal-task-title"><button class="modal-close" type="button" aria-label="Close preview">×</button><div class="modal-preview" id="modal-preview"></div><div class="modal-content"><p class="task-category" id="modal-category"></p><h2 id="modal-task-title"></h2><p class="modal-price" id="modal-price"></p><p id="modal-description"></p><button class="button" id="modal-add" type="button">Add task</button></div></dialog>
   </body>
 </html>

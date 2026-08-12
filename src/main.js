@@ -44,10 +44,46 @@ function renderTasks() {
 function updateSummary() {
   const selectedTasks = tasks.filter((task) => selected.has(task.id))
   const total = selectedTasks.reduce((sum, task) => sum + task.price, 0)
+  const wasVisible = !summary.hidden
+  const requestItems = document.querySelector('#request-items')
   document.querySelector('#task-count').textContent = `${selectedTasks.length} task${selectedTasks.length === 1 ? '' : 's'}`
   document.querySelector('#task-total').textContent = `€${total} estimated`
+  document.querySelector('#request-total').textContent = `€${total}`
+  requestItems.replaceChildren()
+  selectedTasks.slice(0, 2).forEach((task) => {
+    const item = document.createElement('div')
+    item.className = 'request-summary__item'
+    const title = document.createElement('span')
+    const price = document.createElement('strong')
+    title.textContent = task.title
+    price.textContent = `€${task.price}`
+    item.append(title, price)
+    requestItems.append(item)
+  })
+  if (selectedTasks.length > 2) {
+    const more = document.createElement('div')
+    more.className = 'request-summary__item request-summary__item--more'
+    const label = document.createElement('span')
+    label.textContent = `+${selectedTasks.length - 2} more task${selectedTasks.length === 3 ? '' : 's'}`
+    more.append(label, document.createElement('span'))
+    requestItems.append(more)
+  }
   document.querySelector('#request-tasks').href = `mailto:hello@vitreen.studio?subject=${encodeURIComponent('Vitreen task request')}&body=${encodeURIComponent(`Hello Vitreen,\n\nI would like to request:\n${selectedTasks.map((task) => `- ${task.title} (€${task.price})`).join('\n')}\n\nEstimated total: €${total}`)}`
-  summary.hidden = selectedTasks.length === 0
+  if (!selectedTasks.length) {
+    summary.classList.remove('is-visible', 'is-updated')
+    summary.hidden = true
+  } else {
+    summary.hidden = false
+    if (!wasVisible) {
+      requestAnimationFrame(() => summary.classList.add('is-visible'))
+    } else {
+      summary.classList.remove('is-updated')
+      requestAnimationFrame(() => {
+        summary.classList.add('is-updated')
+        window.setTimeout(() => summary.classList.remove('is-updated'), 280)
+      })
+    }
+  }
   updateInvoice(selectedTasks, total)
 }
 
