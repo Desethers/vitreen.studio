@@ -5,15 +5,17 @@ import './styles/sections.css'
 import { BadgeCheck, BadgeEuro, createIcons, Database, Files, Monitor, Plug, Search } from 'lucide'
 
 const tasks = [
-  { id: 'publish-exhibition', category: 'website', label: 'Website', title: 'Publish an exhibition', price: 90, description: 'Send the text, images and dates. Vitreen prepares and publishes the exhibition on the existing gallery website.' },
-  { id: 'artist-page', category: 'website', label: 'Website', title: 'Add an artist page', price: 70, description: 'Biography, works, images and basic metadata added to the gallery website.' },
-  { id: 'update-artworks', category: 'website', label: 'Website', title: 'Update 10 artworks', price: 80, description: 'Update images, captions, availability or other artwork information.' },
-  { id: 'import-artworks', category: 'database', label: 'Database', title: 'Import 50 artworks', price: 150, description: 'Send a spreadsheet or export. Vitreen cleans and imports up to 50 artworks.' },
-  { id: 'clean-records', category: 'database', label: 'Database', title: 'Clean 50 artwork records', price: 120, description: 'Standardise titles, dates, dimensions, prices, availability and obvious inconsistencies.' },
-  { id: 'collector-pdf', category: 'sales-material', label: 'Sales material', title: 'Collector PDF', price: 60, description: 'Prepare a clean gallery-ready PDF from selected artworks, ready for Gmail or WhatsApp.' },
-  { id: 'viewing-room', category: 'sales-material', label: 'Sales material', title: 'Private viewing room', price: 95, description: 'Prepare and publish a private online artwork selection for a collector.' },
-  { id: 'seo-check', category: 'visibility', label: 'Visibility', title: 'Artist SEO check', price: 90, description: 'Check indexing, metadata, titles and obvious search issues for one artist.' },
-  { id: 'fix-google', category: 'visibility', label: 'Visibility', title: 'Fix an artist page for Google', price: 70, description: 'Implement the main SEO fixes directly on an existing artist page.' },
+  { id: 'publish-exhibition', category: 'website', label: 'Website', title: 'Publish an exhibition', price: 120, description: 'Text, images and dates turned into a published exhibition page.' },
+  { id: 'opening-website', category: 'website', label: 'Website', title: 'Prepare for an opening', price: 220, description: 'Homepage, exhibition and artist pages refreshed and ready before opening.' },
+  { id: 'artist-page', category: 'website', label: 'Website', title: 'Add an artist page', price: 90, description: 'Biography, works, images and basic metadata added to the gallery website.' },
+  { id: 'update-artworks', category: 'website', label: 'Website', title: 'Update 10 artworks', price: 90, description: 'Update images, captions, availability or other artwork information.' },
+  { id: 'fix-website-issue', category: 'website', label: 'Website', title: 'Fix a website issue', price: 90, description: 'Something looks wrong or stopped working? We investigate and fix one defined issue.' },
+  { id: 'import-artworks', category: 'database', label: 'Database', title: 'Import 50 artworks', price: 220, description: 'Up to 50 artworks cleaned and imported from your spreadsheet or export.' },
+  { id: 'clean-records', category: 'database', label: 'Database', title: 'Clean 50 artwork records', price: 180, description: 'Standardise titles, dates, dimensions, prices, availability and obvious inconsistencies.' },
+  { id: 'collector-pdf', category: 'sales-material', label: 'Sales material', title: 'Collector PDF', price: 80, description: 'A clean, gallery-ready PDF prepared from selected artworks.' },
+  { id: 'viewing-room', category: 'sales-material', label: 'Sales material', title: 'Private viewing room', price: 120, description: 'Prepare and publish a private online artwork selection for a collector.' },
+  { id: 'seo-check', category: 'visibility', label: 'Visibility', title: 'Artist SEO check', price: 120, description: 'Find the main issues.' },
+  { id: 'fix-google', category: 'visibility', label: 'Visibility', title: 'Google indexing', price: 90, description: 'Get new pages discovered.' },
 ]
 
 const grid = document.querySelector('#task-grid')
