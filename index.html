@@ -17,7 +17,7 @@
         <nav class="nav" aria-label="Main navigation">
           <a href="#tasks">Tasks</a><a href="#how-it-works">How it works</a><a href="#projects">Projects</a>
         </nav>
-        <a class="button" href="#tasks">Browse tasks</a>
+        <a class="button" href="#tasks">Work with us</a>
       </div>
     </header>
     <main id="top">
@@ -62,34 +62,44 @@
             <div class="process-card__copy"><p class="process-card__eyebrow">Send by email</p><h3>Choose a task and send what we need.</h3><p>Select a service, then email the text, images, links, exports or access details. We confirm the scope and price before starting.</p></div>
             <div class="email-mockup" aria-hidden="true">
               <div class="mockup-bar"><i></i><i></i><i></i><span>New message</span></div>
-              <div class="email-field"><span>To</span><strong>studio@vitreen.art</strong></div>
-              <div class="email-field"><span>Subject</span><strong>Publish our new exhibition</strong></div>
-              <p>Hi Vitreen, here are the materials for the exhibition page.</p>
-              <div class="attachment-list"><span>Exhibition copy.docx</span><span>Images · 12 files</span><span>Dates &amp; artists.csv</span></div>
+              <div class="email-field"><span>To</span><strong>hello@vitreen.studio</strong></div>
+              <div class="email-field"><span>Subject</span><strong>Vitreen task request</strong></div>
+              <p>Hello Vitreen,<br>I would like to request:</p>
+              <div class="attachment-list"><span>Publish an exhibition (€120)</span></div>
+              <p>Estimated total: €120</p>
               <button type="button" tabindex="-1">Send</button>
             </div>
           </article>
           <article class="process-card">
             <div class="process-card__copy"><p class="process-card__eyebrow">Handled by Vitreen</p><h3>We confirm, produce and check.</h3><p>We reply with anything missing, complete the task and human-check every detail. You hear from us only when a decision is needed.</p></div>
             <div class="work-mockup" aria-hidden="true">
-              <div class="work-mockup__head"><div><span>Publish an exhibition</span><strong>In progress</strong></div><b>€90</b></div>
-              <ul>
-                <li class="is-complete"><i>✓</i><div><strong>Scope confirmed</strong><span>Text, dates and 12 images received</span></div></li>
-                <li class="is-complete"><i>✓</i><div><strong>Page prepared</strong><span>Content entered and images optimised</span></div></li>
-                <li class="is-active"><i></i><div><strong>Human review</strong><span>Links, layout and metadata checked</span></div></li>
+              <div class="proof-head"><span>Exhibition page</span><em>Proof</em></div>
+              <div class="proof-page">
+                <span class="proof-line proof-line--title"></span>
+                <span class="proof-line proof-line--sub"></span>
+                <div class="proof-art"></div>
+                <span class="proof-line"></span>
+                <span class="proof-line proof-line--short"></span>
+                <i class="proof-pin proof-pin--a">1</i>
+                <i class="proof-pin proof-pin--b">2</i>
+                <i class="proof-pin proof-pin--c">3</i>
+              </div>
+              <ul class="proof-notes">
+                <li><i>1</i>Dates match the invitation</li>
+                <li><i>2</i>Images cropped and optimised</li>
+                <li><i>3</i>Links and mobile layout checked</li>
               </ul>
-              <div class="work-progress"><span></span></div>
             </div>
           </article>
           <article class="process-card">
             <div class="process-card__copy"><p class="process-card__eyebrow">Approve before payment</p><h3>Review the delivery, then pay.</h3><p>We email the completed work. Approve it or request a correction, then pay after delivery. If we cannot make it right, we refund you.</p></div>
             <div class="delivery-mockup" aria-hidden="true">
-              <div class="delivery-icon">✓</div>
-              <span class="delivery-status">Ready for review</span>
-              <h4>Your exhibition page is live.</h4>
-              <p>Everything has been published and checked.</p>
+              <div class="mockup-bar"><i></i><i></i><i></i><span>Vitreen Studio</span></div>
+              <div class="email-field"><span>From</span><strong>hello@vitreen.studio</strong></div>
+              <div class="email-field"><span>Subject</span><strong>Delivered: Publish an exhibition</strong></div>
+              <p><strong>Your exhibition page is live.</strong><br>Everything has been published and checked. Reply to approve, or tell us what needs changing.</p>
+              <div class="delivery-reply"><span>You replied</span><p>“Approved, thank you!”</p></div>
               <div class="delivery-summary"><span>Total after approval</span><strong>€90</strong></div>
-              <div class="delivery-actions"><button type="button" tabindex="-1">Approve &amp; pay</button><button type="button" tabindex="-1">Request a change</button></div>
             </div>
           </article>
         </div>
@@ -121,7 +131,7 @@
       </section>
       <section class="footer-cta" aria-labelledby="footer-cta-title">
         <h2 id="footer-cta-title">What’s still on your gallery’s to-do list?</h2>
-        <p>Tell us what needs doing.<br>We’ll take it from there.</p>
+        <p>Tell us what your gallery needs done today.</p>
         <a class="button" href="mailto:hello@vitreen.studio?subject=Vitreen%20demo">Book a call</a>
         <small>A focused 30-minute conversation about your gallery workflow.</small>
       </section>
@@ -132,7 +142,10 @@
       <div class="site-footer__bottom"><p>© 2026 Vitreen</p><div><span>EN</span><i aria-hidden="true">·</i><span>FR</span><p>Paris, France</p></div></div>
     </footer>
     <aside class="request-summary" id="request-summary" hidden aria-live="polite" aria-label="Selected task estimate">
-      <div class="request-summary__header"><span class="request-summary__brand">Vitreen Studio</span><span class="request-summary__type">Estimate</span></div>
+      <div class="request-summary__drag-zone">
+        <div class="request-summary__handle" aria-hidden="true"></div>
+        <div class="request-summary__header"><span class="request-summary__brand">Vitreen Studio</span><span class="request-summary__type">Estimate</span></div>
+      </div>
       <div class="request-summary__items" id="request-items"></div>
       <div class="request-summary__total"><div><strong id="task-count">0 tasks</strong><span id="task-total">€0 estimated</span></div><strong id="request-total">€0</strong></div>
       <a class="button" id="request-tasks" href="mailto:hello@vitreen.studio">Request selected tasks <span aria-hidden="true">↗</span></a>

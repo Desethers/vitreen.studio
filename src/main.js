@@ -10,8 +10,10 @@ const tasks = [
   { id: 'artist-page', category: 'website', label: 'Website', title: 'Add an artist page', price: 90, description: 'Biography, works, images and basic metadata added to the gallery website.' },
   { id: 'update-artworks', category: 'website', label: 'Website', title: 'Update 10 artworks', price: 90, description: 'Update images, captions, availability or other artwork information.' },
   { id: 'fix-website-issue', category: 'website', label: 'Website', title: 'Fix a website issue', price: 90, description: 'Something looks wrong or stopped working? We investigate and fix one defined issue.' },
-  { id: 'import-artworks', category: 'database', label: 'Database', title: 'Import 50 artworks', price: 220, description: 'Up to 50 artworks cleaned and imported from your spreadsheet or export.' },
-  { id: 'clean-records', category: 'database', label: 'Database', title: 'Clean 50 artwork records', price: 180, description: 'Standardise titles, dates, dimensions, prices, availability and obvious inconsistencies.' },
+  { id: 'organise-database', category: 'database', label: 'Database', title: 'Organise your database', price: 150, description: 'Clean categories, fields and structure.' },
+  { id: 'import-artworks', category: 'database', label: 'Database', title: 'Import 50 artworks', price: 220, description: 'Clean and import your spreadsheet or export.' },
+  { id: 'clean-records', category: 'database', label: 'Database', title: 'Clean 50 artwork records', price: 180, description: 'Fix inconsistent artwork information.' },
+  { id: 'artlogic-check', category: 'database', label: 'Database', title: 'Artlogic database check', price: 120, description: 'Find what needs cleaning or reorganising.' },
   { id: 'collector-pdf', category: 'sales-material', label: 'Sales material', title: 'Collector PDF', price: 80, description: 'A clean, gallery-ready PDF prepared from selected artworks.' },
   { id: 'viewing-room', category: 'sales-material', label: 'Sales material', title: 'Private viewing room', price: 120, description: 'Prepare and publish a private online artwork selection for a collector.' },
   { id: 'seo-check', category: 'visibility', label: 'Visibility', title: 'Artist SEO check', price: 120, description: 'Find the main issues.' },
@@ -161,3 +163,50 @@ modal.addEventListener('click', (event) => { if (event.target === modal) modal.c
 renderTasks()
 updateSummary()
 createIcons({ icons: { BadgeCheck, BadgeEuro, Database, Files, Monitor, Plug, Search } })
+
+// Drag the estimate ticket down to collapse it to a peeking strip, or up to reopen it.
+const dragZone = summary.querySelector('.request-summary__drag-zone')
+if (dragZone) {
+  const PEEK = 56
+  let dragging = false
+  let startY = 0
+  let startOffset = 0
+  let cardHeight = 0
+  let moved = 0
+
+  const setCollapsed = (collapsed) => summary.classList.toggle('is-collapsed', collapsed)
+
+  dragZone.addEventListener('pointerdown', (event) => {
+    dragging = true
+    moved = 0
+    startY = event.clientY
+    cardHeight = summary.getBoundingClientRect().height
+    startOffset = summary.classList.contains('is-collapsed') ? cardHeight - PEEK : 0
+    summary.classList.add('is-dragging')
+    dragZone.setPointerCapture(event.pointerId)
+  })
+
+  dragZone.addEventListener('pointermove', (event) => {
+    if (!dragging) return
+    const delta = event.clientY - startY
+    moved = Math.abs(delta)
+    const next = Math.min(Math.max(startOffset + delta, 0), cardHeight - PEEK)
+    summary.style.transform = `translate(-50%, ${next}px)`
+  })
+
+  const endDrag = (event) => {
+    if (!dragging) return
+    dragging = false
+    summary.classList.remove('is-dragging')
+    summary.style.transform = ''
+    if (moved < 6) {
+      setCollapsed(!summary.classList.contains('is-collapsed'))
+    } else {
+      const delta = event.clientY - startY
+      const finalOffset = Math.min(Math.max(startOffset + delta, 0), cardHeight - PEEK)
+      setCollapsed(finalOffset > (cardHeight - PEEK) / 2)
+    }
+  }
+  dragZone.addEventListener('pointerup', endDrag)
+  dragZone.addEventListener('pointercancel', endDrag)
+}
