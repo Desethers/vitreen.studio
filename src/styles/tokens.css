@@ -1,0 +1,57 @@
+/* Imported from Vitreen/app/globals.css. */
+:root {
+  --background: #ffffff;
+  --foreground: #111110;
+  --muted: #a3a3a3;
+  --eyebrow: #a3a3a3;
+  --subtitle: #a3a3a3;
+  --subtle: #adadaa;
+  --border: #e8e8e6;
+  --border-soft: #efefeb;
+  --surface-soft: #f5f5f3;
+  --surface-warm: #fafaf8;
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.07);
+  --radius: 4px;
+  --radius-xs: 4px;
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+  --radius-4xl: 4px;
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: var(--font-sans);
+  --font-display: var(--font-sans);
+  --font-mono: var(--font-sans);
+
+  /* Landing aliases: these retain the Figma component vocabulary. */
+  --color-white-solid: var(--background);
+  --color-grey-6: var(--foreground);
+  --color-grey-41: var(--muted);
+  --color-grey-91: var(--border);
+  --color-card: var(--surface-warm);
+  --color-service-detail: var(--subtle);
+  --color-body-copy: var(--muted);
+  --font-family-font-1: var(--font-sans);
+  /* Vitreen's documented type scale — DesignTokens.stories.tsx. */
+  --type-display-26: 26px;
+  --type-display-20: 20px;
+  --type-body-15: 15px;
+  --type-body-14: 14px;
+  --type-body-13: 13px;
+  --type-meta-11: 11px;
+  --font-size-10: var(--type-meta-11);
+  --font-size-12: var(--type-body-13);
+  --font-size-14: var(--type-body-14);
+  --font-size-15: var(--type-body-15);
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --line-height-18: 18px;
+  --line-height-19-5: 19.5px;
+  --letter-spacing--0-15: -.15px;
+  --radius-pill: 999px;
+  --ink: var(--foreground);
+  --line: var(--border);
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Done-for-you digital work for contemporary art galleries." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <title>Vitreen — Digital work for galleries</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="brand" href="#top">Vitreen <span>Studio</span></a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#tasks">Tasks</a><a href="#how-it-works">How it works</a><a href="#projects">Projects</a>
+        </nav>
+        <a class="button" href="#tasks">Browse tasks</a>
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__layout">
+          <div class="hero__content">
+            <p class="eyebrow">A digital studio for contemporary art.</p>
+            <h1 id="hero-title">Digital work<br>for galleries.</h1>
+            <p class="hero__copy">We handle your gallery’s digital day-to-day. Choose the work,<br class="desktop-break"> see the price, and send us what we need.</p>
+            <ul class="reassurances" aria-label="Service benefits"><li><i data-lucide="badge-euro" aria-hidden="true"></i>Clear prices</li><li><i data-lucide="badge-check" aria-hidden="true"></i>Human checked</li><li><i data-lucide="plug" aria-hidden="true"></i>Works with your current tools</li></ul>
+            <div class="hero__actions">
+              <a class="button" href="#tasks">Browse tasks <span aria-hidden="true">→</span></a>
+              <a class="outline-button" href="#projects">Larger project?</a>
+            </div>
+          </div>
+          <aside class="service-estimate" aria-label="Example service invoice">
+            <div class="invoice-top"><div><p class="invoice-brand">Vitreen</p><span>Digital work for galleries</span></div><div class="invoice-id"><strong>Invoice</strong><span>#VTR-0184</span></div></div>
+            <div class="invoice-meta"><div><span>Bill to</span><strong>Fields &amp; Rowe</strong><small>Paris, France</small></div><div><span>Issued</span><strong id="invoice-date"></strong><span>Due</span><strong>On completion</strong></div></div>
+            <div class="invoice-table"><div class="invoice-row invoice-row--head"><span>Description</span><span>Qty</span><span>Rate</span><span>Amount</span></div><div class="invoice-items" id="invoice-items"></div></div>
+            <div class="invoice-totals"><div><span>Subtotal</span><strong id="invoice-subtotal">€0</strong></div><div><span>VAT</span><strong>—</strong></div><div class="invoice-total"><span>Total</span><strong id="invoice-total">€0</strong></div></div>
+            <div class="invoice-footer"><span>Payment after completion</span><strong>No subscription · No retainer</strong></div>
+          </aside>
+        </div>
+      </section>
+      <section class="category-strip" aria-label="Service categories">
+        <div class="category-strip__heading"><p class="eyebrow">Our services</p><h2>Where we can help.</h2><p>Your website, your data, and how people find you.</p></div>
+        <a class="category-link" href="#tasks" data-category="website"><i data-lucide="monitor" aria-hidden="true"></i><div><strong>Website</strong><span>Keep your artists, exhibitions and artworks current without waiting for a developer.</span></div></a>
+        <a class="category-link" href="#tasks" data-category="database"><i data-lucide="database" aria-hidden="true"></i><div><strong>Database</strong><span>Clean, structure and import the records your gallery relies on every day.</span></div></a>
+        <a class="category-link" href="#tasks" data-category="visibility"><i data-lucide="search" aria-hidden="true"></i><div><strong>Visibility</strong><span>Make artist pages easier to find with clear, practical SEO improvements.</span></div></a>
+      </section>
+      <section class="tasks" id="tasks" aria-labelledby="tasks-title">
+        <div class="section-heading"><div class="section-heading__title"><p class="eyebrow">Pricing</p><h2 id="tasks-title">Choose the work.<br /><span>Pay per task.</span></h2></div><p class="section-heading__copy">You know what the work will cost before we start. No hourly rates, no surprises.</p></div>
+        <div class="task-filters" role="tablist" aria-label="Task categories">
+          <button class="filter is-active" type="button" data-filter="all">All</button><button class="filter" type="button" data-filter="website">Website</button><button class="filter" type="button" data-filter="database">Database</button><button class="filter" type="button" data-filter="sales-material">Sales material</button><button class="filter" type="button" data-filter="visibility">Visibility</button>
+        </div>
+        <div class="task-grid" id="task-grid" aria-live="polite"></div>
+      </section>
+      <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-heading"><p class="eyebrow">How it works</p><h2 id="how-title">Send the work.<br /><span>We handle it.</span></h2></div>
+        <div class="process-cards">
+          <article class="process-card">
+            <div class="process-card__copy"><p class="process-card__eyebrow">Send by email</p><h3>Choose a task and send what we need.</h3><p>Select a service, then email the text, images, links, exports or access details. We confirm the scope and price before starting.</p></div>
+            <div class="email-mockup" aria-hidden="true">
+              <div class="mockup-bar"><i></i><i></i><i></i><span>New message</span></div>
+              <div class="email-field"><span>To</span><strong>studio@vitreen.art</strong></div>
+              <div class="email-field"><span>Subject</span><strong>Publish our new exhibition</strong></div>
+              <p>Hi Vitreen, here are the materials for the exhibition page.</p>
+              <div class="attachment-list"><span>Exhibition copy.docx</span><span>Images · 12 files</span><span>Dates &amp; artists.csv</span></div>
+              <button type="button" tabindex="-1">Send</button>
+            </div>
+          </article>
+          <article class="process-card">
+            <div class="process-card__copy"><p class="process-card__eyebrow">Handled by Vitreen</p><h3>We confirm, produce and check.</h3><p>We reply with anything missing, complete the task and human-check every detail. You hear from us only when a decision is needed.</p></div>
+            <div class="work-mockup" aria-hidden="true">
+              <div class="work-mockup__head"><div><span>Publish an exhibition</span><strong>In progress</strong></div><b>€90</b></div>
+              <ul>
+                <li class="is-complete"><i>✓</i><div><strong>Scope confirmed</strong><span>Text, dates and 12 images received</span></div></li>
+                <li class="is-complete"><i>✓</i><div><strong>Page prepared</strong><span>Content entered and images optimised</span></div></li>
+                <li class="is-active"><i></i><div><strong>Human review</strong><span>Links, layout and metadata checked</span></div></li>
+              </ul>
+              <div class="work-progress"><span></span></div>
+            </div>
+          </article>
+          <article class="process-card">
+            <div class="process-card__copy"><p class="process-card__eyebrow">Approve before payment</p><h3>Review the delivery, then pay.</h3><p>We email the completed work. Approve it or request a correction, then pay after delivery. If we cannot make it right, we refund you.</p></div>
+            <div class="delivery-mockup" aria-hidden="true">
+              <div class="delivery-icon">✓</div>
+              <span class="delivery-status">Ready for review</span>
+              <h4>Your exhibition page is live.</h4>
+              <p>Everything has been published and checked.</p>
+              <div class="delivery-summary"><span>Total after approval</span><strong>€90</strong></div>
+              <div class="delivery-actions"><button type="button" tabindex="-1">Approve &amp; pay</button><button type="button" tabindex="-1">Request a change</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="software-promo" id="projects" aria-labelledby="software-promo-title">
+        <div class="software-promo__intro">
+          <p class="eyebrow">Vitreen Software</p>
+          <h2 id="software-promo-title">Ready to upgrade how your gallery works?</h2>
+          <div class="software-promo__description"><p>Make everyday gallery work simpler, faster and more independent.</p><p>Get a connected database, website and sales tools for Gmail and WhatsApp.</p></div>
+          <a class="button" href="https://vitreen.art/pricing" target="_blank" rel="noreferrer">Explore Vitreen Software <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="software-features">
+          <article><i aria-hidden="true">✓</i><div><h3>Artwork database</h3><p>Works, artists, prices and availability in one place.</p></div></article>
+          <article><i aria-hidden="true">✓</i><div><h3>Connected website</h3><p>Update your website from the same information.</p></div></article>
+          <article><i aria-hidden="true">✓</i><div><h3>Gmail sales tools</h3><p>Add artwork details directly to collector emails.</p></div></article>
+          <article><i aria-hidden="true">✓</i><div><h3>WhatsApp sales tools</h3><p>Share works and selections straight from your phone.</p></div></article>
+          <article><i aria-hidden="true">✓</i><div><h3>Always in sync</h3><p>Update something once, and keep it current everywhere.</p></div></article>
+          <article><i aria-hidden="true">✓</i><div><h3>More control</h3><p>Handle everyday updates without waiting for a developer.</p></div></article>
+        </div>
+      </section>
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Questions.</h2>
+        <div class="faq__items">
+          <details><summary>How do I send the material for a task?</summary><p>Reply to the confirmation email with your text, images, links or access details. We’ll tell you if anything else is needed.</p></details>
+          <details><summary>Can I request more than one task?</summary><p>Yes. Add the tasks you need and we’ll confirm the scope and total before starting.</p></details>
+          <details><summary>Do I need to change my current tools?</summary><p>No. We work with the tools you already use, including your existing website, Artlogic exports and shared files.</p></details>
+          <details><summary>What if I’m not satisfied with the result?</summary><p>We’ll make it right. If we can’t deliver the agreed outcome, we’ll refund the task.</p></details>
+        </div>
+      </section>
+      <section class="footer-cta" aria-labelledby="footer-cta-title">
+        <h2 id="footer-cta-title">Spend less time updating.<br>More time with your gallery.</h2>
+        <p>Tell us what keeps getting in the way. We’ll show you a simpler way to handle it.</p>
+        <a class="button" href="mailto:hello@vitreen.studio?subject=Vitreen%20demo">Book a call</a>
+        <small>A focused 30-minute conversation about your gallery workflow.</small>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__intro"><a class="site-footer__brand" href="#top">Vitreen <span>Studio</span></a><p>Done-for-you digital work for contemporary galleries. Clear scope, clear price, no retainers.</p></div>
+      <nav class="site-footer__nav" aria-label="Footer"><div><span>Product</span><a href="#how-it-works">How it works</a><a href="#tasks">Pricing</a></div><div><span>Company</span><a href="#projects">About</a><a href="mailto:hello@vitreen.studio">Contact</a></div></nav>
+      <div class="site-footer__bottom"><p>© 2026 Vitreen</p><div><span>EN</span><i aria-hidden="true">·</i><span>FR</span><p>Paris, France</p></div></div>
+    </footer>
+    <aside class="request-summary" id="request-summary" hidden aria-live="polite"><div><strong id="task-count">0 tasks</strong><span id="task-total">€0 estimated</span></div><a class="button" id="request-tasks" href="mailto:hello@vitreen.studio">Request selected tasks</a></aside>
+    <dialog class="task-modal" id="task-modal" aria-labelledby="modal-task-title"><button class="modal-close" type="button" aria-label="Close preview">×</button><div class="modal-preview" id="modal-preview"></div><div class="modal-content"><p class="task-category" id="modal-category"></p><h2 id="modal-task-title"></h2><p class="modal-price" id="modal-price"></p><p id="modal-description"></p><button class="button" id="modal-add" type="button">Add task</button></div></dialog>
+  </body>
+</html>
