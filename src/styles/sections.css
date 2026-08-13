@@ -137,6 +137,18 @@ main { margin: auto; max-width: 1280px; padding: 0 10px; }.hero { align-items: c
 @media (max-width: 760px) { .connected-website { flex-direction: column; gap: 42px; margin: 60px 0 80px; padding: 40px 28px; }.connected-website__copy, .connected-website__copy h2, .connected-website__copy p { max-width: none; } }
 @media (max-width: 760px) { .footer-cta { padding: 48px 24px; }.footer-cta p { margin-bottom: 40px; }.site-footer { gap: 56px; grid-template-columns: 1fr; padding: 56px 24px; }.site-footer__nav { gap: 32px; }.site-footer__bottom { align-items: flex-start; flex-direction: column; gap: 12px; margin-top: 0; } }
 
+.quote { border-top: 1px solid var(--line); padding: 80px 22px; }
+.quote blockquote { margin: 0 auto; max-width: 760px; }
+.quote p { font-size: 26px; letter-spacing: -.02em; line-height: 1.35; margin: 0; }
+.quote footer { align-items: center; display: flex; gap: 16px; margin-top: 32px; }
+.quote footer img { border-radius: 50%; filter: grayscale(1); height: 44px; object-fit: cover; width: 44px; }
+.quote cite { display: block; font-size: 14px; font-style: normal; font-weight: var(--font-weight-500); }
+.quote footer span { color: var(--muted); display: block; font-size: 12px; margin-top: 2px; }
+@media (max-width: 640px) {
+  .quote { padding: 48px 18px; }
+  .quote p { font-size: 21px; }
+}
+
 /* Shared vertical rhythm. */
 .category-strip { padding: 32px 22px 72px; }
 .tasks, .how-it-works, .legacy-todo { padding-block: 72px; }
